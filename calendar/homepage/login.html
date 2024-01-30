@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- onclick="document.location='index.html'" -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,13 +21,13 @@
         <div class="mainContainer">
             <!-- Username -->
             <label for="username">Your username</label>
-            <input type="text" placeholder="Enter Username" name="username" required>
+            <input id="username" type="text" placeholder="Enter Username" name="username" required>
 
             <br><br>
 
             <!-- Password -->
             <label for="pswrd">Your password</label>
-            <input type="password" placeholder="Enter Password" name="pswrd" required>
+            <input id="password" type="password" placeholder="Enter Password" name="pswrd" required>
 
             <!-- sub container for the checkbox and forgot password link -->
             <div class="subcontainer">
@@ -38,7 +39,7 @@
 
 
             <!-- Submit button -->
-            <button onclick="document.location='index.html'">Login</button>
+            <button id="btn" onclick="validateLogin()">Login</button>
         
 
             <!-- Sign up link -->
@@ -47,5 +48,6 @@
         </div>
 
     </form>
+    <script src="login.js"></script>
 </body>
 </html>
