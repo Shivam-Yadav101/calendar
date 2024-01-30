@@ -7,7 +7,7 @@ function validateLogin() {
 
      //ye password aur username login k time daalne hai
     var validUsername = 'calender10';
-    var validPassword = 'bahubali';
+    var validPassword = '12345';
 
     if (username === validUsername && password === validPassword) {
       
